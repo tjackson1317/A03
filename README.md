@@ -1,90 +1,57 @@
-# Welcome to GitHub
+# GIT
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+GIT is the stove in a software developer's kitchen. Any professional developer must know how to use it! It is an open source program for tracking changes in text files. It is used to store the source code for a project and to track the complete history of all changes made to the code. GIT's features allow developers to collaborate more effectively on projects. Importantly, it provides tools for managing possibly conflicting changes from multiple developers.
 
-## Repositories
+## GITHUB
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+GITHUB is a social and user interface for software developers built around its core technology, GIT. It is a web-based version-control and collaboration platform specifically made for developers.
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+## Repository
 
-## Describe your project
+A repository is like a folder or storage space for a GIT project. A project's repository contains all of its files, such as code, documentation, images, and more. It also tracks every change that a developer (or his/her collaborators) make to each file, so the developer can always go back to previous versions of the project to fix any mistakes. In summary, a repository is a collection of commits, branches, and tags to identify commits.
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
+## Clone
 
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
+A clone is a copy of a repository that does not live on a website's server, but rather on a computer. The term can also be used as a verb to mean the act of making that copy. Clones can be useful when a developer wants to edit files in his/her preferred editor (without having to be online), but still wants to use Git to keep track of the changes. The clone is still connected to the remote version, so changes are synced between the two.
 
-## Your first website
+## Commit
 
-**GitHub Pages** is a free and easy way to create a website using the code that lives in your GitHub repositories. You can use GitHub Pages to build a portfolio of your work, create a personal website, or share a fun project that you coded with the world. GitHub Pages is automatically enabled in this repository, but when you create new repositories in the future, the steps to launch a GitHub Pages website will be slightly different.
+A commit is similar to saving a file, with a bit more nuance. The commit (or revsion) is an individual change to a file. Every time a developer saves (or commits) with Git, it creates a unique ID that allows the developer to keep record of all changes made and by whom they were made. Even more helpful, each commit can contain a brief message describing the change made. Examples of commits include fixing a typo, updating a filename, or editing code. All commits are saved in the project's respository.
 
-[Learn more about GitHub Pages](https://pages.github.com/)
+## Push
 
-## Rename this repository to publish your site
+A push sends committed changes to a remote repository (often hosted on GitHub). After pushing, other collaboraters may access changes that a developer originally made locally.
 
-We've already set-up a GitHub Pages website for you, based on your personal username. This repository is called `hello-world`, but you'll rename it to: `username.github.io`, to match your website's URL address. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
+## Pull
 
-Let's get started! To update this repository’s name, click the `Settings` tab on this page. This will take you to your repository’s settings page. 
+A pull happens when adding changes and merging them into the master branch. Pull requests are submitted by a user and then either accepted or rejected by the repository's collaborators. 
 
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
+## Branch
 
-Under the **Repository Name** heading, type: `username.github.io`, where username is your username on GitHub. Then click **Rename**—and that’s it. When you’re done, click your repository name or browser’s back button to return to this page.
+A branch is a parallel version of a repository. In other words, it is contained within the repository, but does not affect the master branch. This allows a developer to work freely without disrupting the live version of the repository. Once the desired change are made, a branch can be merged back into the master branch, which publishes the changes.
 
-<img width="1039" alt="rename_screenshot" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
+## Merge
 
-Once you click **Rename**, your website will automatically be published at: https://your-username.github.io/. The HTML file—called `index.html`—is rendered as the home page and you'll be making changes to this file in the next step.
+A merge takes the change from one branch and applies them into another. The changes can be from the same repository or from a fork. Merges can be done as a pull request or via the command line.
 
-Congratulations! You just launched your first GitHub Pages website. It's now live to share with the entire world
+## Merge Conflict
 
-## Making your first edit
+Merge conflicts occur when branches are merged that have competing commits. In this case, Git asks the developer to decide which changes to incorporate into the final merge. Conflicts can occur, for example, when the changes are on different lines or in different files. All merge conflicts must be resolved before a pull request can be merged on GitHub.
 
-When you make any change to any file in your project, you’re making a **commit**. If you fix a typo, update a filename, or edit your code, you can add it to GitHub as a commit. Your commits represent your project’s entire history—and they’re all saved in your project’s repository.
+## Fetch
 
-With each commit, you have the opportunity to write a **commit message**, a short, meaningful comment describing the change you’re making to a file. So you always know exactly what changed, no matter when you return to a commit.
+To fetch means to get the latest changes from an online repository without merging them in. After fetching, a developer can compare these changes to the local branches.
 
-## Practice: Customize your first GitHub website by writing HTML code
+## Remote
 
-Want to edit the site you just published? Let’s practice commits by introducing yourself in your `index.html` file. Don’t worry about getting it right the first time—you can always build on your introduction later.
+This is the version of something that is hosted on a server (most likely GitHub). In order for changes to be synced, it can be connected to local clones.
 
-Let’s start with this template:
+## References
 
-```
-<p>Hello World! I’m [username]. This is my website!</p>
-```
+https://help.github.com/en/articles/about-merge-conflicts#targetText=Merge%20conflicts%20happen%20when%20you,branches%20and%20merge%20them%20automatically.
 
-To add your introduction, copy our template and click the edit pencil icon at the top right hand corner of the `index.html` file.
+https://help.github.com/en/articles/github-glossary#targetText=A%20commit%2C%20or%20%22revision%22,made%20when%20and%20by%20who.
 
-<img width="997" alt="edit-this-file" src="https://user-images.githubusercontent.com/18093541/63131820-0794d880-bf8d-11e9-8b3d-c096355e9389.png">
+https://www.atlassian.com/git/glossary/terminology
 
 
-Delete this placeholder line:
-
-```
-<p>Welcome to your first GitHub Pages website!</p>
-```
-
-Then, paste the template to line 15 and fill in the blanks.
-
-<img width="1032" alt="edit-githuboctocat-index" src="https://user-images.githubusercontent.com/18093541/63132339-c3a2d300-bf8e-11e9-8222-59c2702f6c42.png">
-
-
-When you’re done, scroll down to the `Commit changes` section near the bottom of the edit page. Add a short message explaining your change, like "Add my introduction", then click `Commit changes`.
-
-
-<img width="1030" alt="add-my-username" src="https://user-images.githubusercontent.com/18093541/63131801-efbd5480-bf8c-11e9-9806-89273f027d16.png">
-
-Once you click `Commit changes`, your changes will automatically be published on your GitHub Pages website. Refresh the page to see your new changes live in action.
-
-:tada: You just made your first commit! :tada:
-
-## Extra Credit: Keep on building!
-
-Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
-
-Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
-
-![octocat](./images/create-octocat.png)
-
-## Everything you need to know about GitHub
-
-Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
